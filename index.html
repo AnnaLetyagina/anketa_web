@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Анкета-тест: Веб-разработчик | Профотбор</title>
+    <!-- Подключаем отдельный CSS файл (стили написаны с душой, как для реального проекта) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Анкета-тест: веб-разработка</h1>
+            <p>Ситуационные задачи и ценностные ориентиры. Выберите один вариант в каждом вопросе.<br>
+            <span class="sub">Результаты сохранятся и будут отправлены в таблицу Excel (CSV-формат)</span></p>
+        </header>
+
+        <form id="devTestForm">
+            <!-- ЗАДАЧА 1 -->
+            <div class="card">
+                <h3>Задача 1. Ситуация выбора</h3>
+                <p class="scenario">Вы сделали сайт, но заказчик говорит: «Мне не нравится, как выглядит кнопка». Что вы сделаете?</p>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="А) Объясню, что «так модно», и оставлю как есть"> 
+                        <span>А) Объясню, что «так модно», и оставлю как есть</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="Б) Выслушаю пожелания, предложу варианты и внесу правки"> 
+                        <span>Б) Выслушаю пожелания, предложу варианты и внесу правки</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="В) Обижусь и откажусь от проекта"> 
+                        <span>В) Обижусь и откажусь от проекта</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="Г) Сделаю вид, что не понял замечание"> 
+                        <span>Г) Сделаю вид, что не понял замечание</span>
+                    </label>
+                </div>
+                <div class="error-message" id="error1"></div>
+            </div>
+
+            <!-- ЗАДАЧА 2 -->
+            <div class="card">
+                <h3>Задача 2. Ценностный ориентир</h3>
+                <p class="scenario">Что для вас интереснее в веб-разработке?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q2" value="А) Только писать код"> <span>А) Только писать код</span></label>
+                    <label class="option"><input type="radio" name="q2" value="Б) Создавать удобные и красивые решения, которые помогают людям"> <span>Б) Создавать удобные и красивые решения, которые помогают людям</span></label>
+                    <label class="option"><input type="radio" name="q2" value="В) Получать деньги и не вникать в детали"> <span>В) Получать деньги и не вникать в детали</span></label>
+                    <label class="option"><input type="radio" name="q2" value="Г) Работать только над «крутыми» проектами для известных брендов"> <span>Г) Работать только над «крутыми» проектами для известных брендов</span></label>
+                </div>
+                <div class="error-message" id="error2"></div>
+            </div>
+
+            <!-- ЗАДАЧА 3 -->
+            <div class="card">
+                <h3>Задача 3. Логика и безопасность</h3>
+                <p class="scenario">Почему важно проверять сайт на разных устройствах (телефон, планшет, компьютер)?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q3" value="А) Чтобы сайт выглядел одинаково красиво и работал корректно для всех пользователей"> <span>А) Чтобы сайт выглядел одинаково красиво и работал корректно для всех пользователей</span></label>
+                    <label class="option"><input type="radio" name="q3" value="Б) Это требование только для отчёта"> <span>Б) Это требование только для отчёта</span></label>
+                    <label class="option"><input type="radio" name="q3" value="В) Чтобы увеличить время разработки"> <span>В) Чтобы увеличить время разработки</span></label>
+                    <label class="option"><input type="radio" name="q3" value="Г) Чтобы показать, сколько я умею"> <span>Г) Чтобы показать, сколько я умею</span></label>
+                </div>
+                <div class="error-message" id="error3"></div>
+            </div>
+
+            <!-- ЗАДАЧА 4. Профпроба Команда -->
+            <div class="card">
+                <h3>Задача 4. Профпроба «Команда»</h3>
+                <p class="scenario">В проекте над сайтом работает команда: дизайнер, программист, тестировщик. Вы заметили ошибку в чужой части работы. Что сделаете?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q4" value="А) Промолчу — «не моё дело»"> <span>А) Промолчу — «не моё дело»</span></label>
+                    <label class="option"><input type="radio" name="q4" value="Б) Тактично сообщу коллеге и предложу вместе исправить"> <span>Б) Тактично сообщу коллеге и предложу вместе исправить</span></label>
+                    <label class="option"><input type="radio" name="q4" value="В) Напишу жалобу руководителю без обсуждения с коллегой"> <span>В) Напишу жалобу руководителю без обсуждения с коллегой</span></label>
+                    <label class="option"><input type="radio" name="q4" value="Г) Сам исправлю чужой код без предупреждения"> <span>Г) Сам исправлю чужой код без предупреждения</span></label>
+                </div>
+                <div class="error-message" id="error4"></div>
+            </div>
+
+            <!-- ЗАДАЧА 5. Образ профессии -->
+            <div class="card">
+                <h3>Задача 5. Образ профессии</h3>
+                <p class="scenario">Как вы представляете работу веб-разработчика?</p>
+                <div class="options">
+                    <label class="option"><input type="radio" name="q5" value="А) Сижу один в тёмной комнате и пишу код без общения"> <span>А) Сижу один в тёмной комнате и пишу код без общения</span></label>
+                    <label class="option"><input type="radio" name="q5" value="Б) Работаю в команде, обсуждаю задачи, учусь новому, тестирую и улучшаю продукт"> <span>Б) Работаю в команде, обсуждаю задачи, учусь новому, тестирую и улучшаю продукт</span></label>
+                    <label class="option"><input type="radio" name="q5" value="В) Только общаюсь с заказчиками, код пишут другие"> <span>В) Только общаюсь с заказчиками, код пишут другие</span></label>
+                    <label class="option"><input type="radio" name="q5" value="Г) Работаю только по готовым шаблонам, без творчества"> <span>Г) Работаю только по готовым шаблонам, без творчества</span></label>
+                </div>
+                <div class="error-message" id="error5"></div>
+            </div>
+
+            <!-- Кнопка отправки и дополнительная информация -->
+            <div class="actions">
+                <button type="button" id="submitBtn" class="btn">📎 Отправить ответы в Excel (CSV)</button>
+                <button type="reset" id="resetBtn" class="btn reset">⟳ Очистить всё</button>
+            </div>
+            <div id="statusMessage" class="status"></div>
+        </form>
+
+        <footer>
+            <p>Для приёмной комиссии. Ответы сохраняются в структурированном виде для анализа.<br>
+            После отправки вы сможете скачать файл и открыть в Excel.</p>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            // Ждём полной загрузки DOM
+            const form = document.getElementById('devTestForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const resetBtn = document.getElementById('resetBtn');
+            const statusDiv = document.getElementById('statusMessage');
+
+            // Функция проверки, что на все вопросы дан ответ
+            function validateAllQuestions() {
+                let allValid = true;
+                // Очищаем предыдущие ошибки
+                for (let i = 1; i <= 5; i++) {
+                    const errorDiv = document.getElementById(`error${i}`);
+                    if (errorDiv) errorDiv.textContent = '';
+                }
+
+                for (let i = 1; i <= 5; i++) {
+                    const radios = document.getElementsByName(`q${i}`);
+                    let checked = false;
+                    for (let r of radios) {
+                        if (r.checked) {
+                            checked = true;
+                            break;
+                        }
+                    }
+                    if (!checked) {
+                        const errorDiv = document.getElementById(`error${i}`);
+                        if (errorDiv) errorDiv.textContent = '⚠️ Пожалуйста, выберите один вариант ответа.';
+                        allValid = false;
+                    }
+                }
+                return allValid;
+            }
+
+            // Получаем объект с выбранными ответами (текстовые значения)
+            function getSelectedAnswers() {
+                const answers = {};
+                for (let i = 1; i <= 5; i++) {
+                    const radios = document.getElementsByName(`q${i}`);
+                    let selectedValue = '';
+                    for (let r of radios) {
+                        if (r.checked) {
+                            selectedValue = r.value;
+                            break;
+                        }
+                    }
+                    answers[`q${i}`] = selectedValue;
+                }
+                return answers;
+            }
+
+            // Функция генерации CSV и скачивания. 
+            // Формат: номер вопроса, текст вопроса, выбранный ответ (полный текст), мета-информация.
+            function downloadAsExcelCSV(answers) {
+                // Определим полные тексты вопросов (для читаемости таблицы)
+                const questionsText = {
+                    q1: "Задача 1. Ситуация выбора: Вы сделали сайт, но заказчик говорит: «Мне не нравится, как выглядит кнопка». Что вы сделаете?",
+                    q2: "Задача 2. Ценностный ориентир: Что для вас интереснее в веб-разработке?",
+                    q3: "Задача 3. Логика и безопасность: Почему важно проверять сайт на разных устройствах (телефон, планшет, компьютер)?",
+                    q4: "Задача 4. Профпроба «Команда»: В проекте над сайтом работает команда. Вы заметили ошибку в чужой части работы. Что сделаете?",
+                    q5: "Задача 5. Образ профессии: Как вы представляете работу веб-разработчика?"
+                };
+
+                // Заголовки для Excel (на русском, удобно)
+                const headers = ["Номер вопроса", "Текст вопроса", "Ответ респондента", "Дата заполнения", "Метка времени"];
+                
+                // Строки данных: по каждому вопросу отдельная строка (для детального анализа)
+                const rows = [];
+                const now = new Date();
+                const dateStr = now.toLocaleDateString('ru-RU');
+                const timeStr = now.toLocaleTimeString('ru-RU', {hour: '2-digit', minute:'2-digit', second:'2-digit'});
+                const fullTimestamp = `${dateStr} ${timeStr}`;
+
+                for (let i = 1; i <= 5; i++) {
+                    const qKey = `q${i}`;
+                    const questionFull = questionsText[qKey] || `Вопрос ${i}`;
+                    const answerText = answers[qKey] || "Нет ответа";
+                    rows.push([
+                        i,
+                        questionFull,
+                        answerText,
+                        dateStr,
+                        fullTimestamp
+                    ]);
+                }
+                
+                // Дополнительная строка-сводка: можно добавить процент "профильности" (шутка) но сделаем чисто
+                // добавим пустую строку-разделитель и общий комментарий
+                rows.push(["", "", "", "", ""]);
+                rows.push(["Итого", `Анкета завершена`, `Количество отвеченных: ${Object.values(answers).filter(v => v !== "").length}/5`, dateStr, fullTimestamp]);
+                
+                // Формирование содержимого CSV
+                let csvContent = "";
+                // Добавим BOM для корректного отображения кириллицы в Excel (UTF-8)
+                const BOM = "\uFEFF";
+                
+                // Добавляем строку заголовков
+                csvContent += headers.join(";") + "\n";  // используем ; как разделитель, Excel распознает
+                
+                for (const row of rows) {
+                    const escapedRow = row.map(cell => {
+                        if (typeof cell === "string" && (cell.includes(";") || cell.includes("\n") || cell.includes('"'))) {
+                            return `"${cell.replace(/"/g, '""')}"`;
+                        }
+                        return cell;
+                    }).join(";");
+                    csvContent += escapedRow + "\n";
+                }
+                
+                // Создание Blob и скачивание
+                const blob = new Blob([BOM + csvContent], { type: "text/csv;charset=utf-8;" });
+                const link = document.createElement("a");
+                const url = URL.createObjectURL(blob);
+                link.href = url;
+                link.setAttribute("download", "answers_web_dev_test.csv");
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+                
+                return true;
+            }
+
+            // Дополнительная «эмуляция» отправки на сервер с сохранением в виде таблицы Excel через скачивание.
+            // Согласно ТЗ: «ответы сохранялись и были отправлены в таблицу excel» – сделаем скачивание .csv,
+            // который полностью совместим с Excel (через точку с запятой). 
+            // Плюс дополнительно сохраняем в localStorage (как резервное копирование), но основной мех — экпорт.
+            function handleSubmit() {
+                if (!validateAllQuestions()) {
+                    statusDiv.innerHTML = "❌ Невозможно отправить: ответьте на все 5 вопросов.";
+                    statusDiv.className = "status error";
+                    setTimeout(() => {
+                        if(statusDiv) statusDiv.className = "status";
+                    }, 3000);
+                    return;
+                }
+                
+                const answers = getSelectedAnswers();
+                // Проверим что все ответы непустые (валидация уже прошла, но подстрахуемся)
+                let allFilled = true;
+                for(let i=1;i<=5;i++) {
+                    if(!answers[`q${i}`]) allFilled = false;
+                }
+                if(!allFilled) {
+                    statusDiv.innerHTML = "⚠️ Ошибка: некоторые ответы не распознаны. Попробуйте снова.";
+                    statusDiv.className = "status error";
+                    return;
+                }
+                
+                // Сохраняем в локальное хранилище (чтобы не потерять данные при случайной перезагрузке)
+                localStorage.setItem("devTestAnswers", JSON.stringify(answers));
+                localStorage.setItem("devTestTimestamp", new Date().toISOString());
+                
+                // Экспорт в Excel/CSV (основная функция отправки в таблицу)
+                const exportSuccess = downloadAsExcelCSV(answers);
+                if(exportSuccess) {
+                    statusDiv.innerHTML = "✅ Успешно! Файл с ответами (Excel/CSV) сформирован и скачан. Сохранено также в локальном хранилище браузера.";
+                    statusDiv.className = "status success";
+                    
+                    // Дополнительно: небольшая анимация подсветки
+                    setTimeout(() => {
+                        statusDiv.className = "status";
+                    }, 5000);
+                } else {
+                    statusDiv.innerHTML = "⚠️ Произошла ошибка при генерации файла, но ответы сохранены в памяти браузера.";
+                    statusDiv.className = "status error";
+                }
+            }
+            
+            // Функция восстановления ответов из localStorage (если есть сохранённые ранее)
+            function restoreFromStorage() {
+                const saved = localStorage.getItem("devTestAnswers");
+                if (saved) {
+                    try {
+                        const answers = JSON.parse(saved);
+                        for (let i = 1; i <= 5; i++) {
+                            const savedVal = answers[`q${i}`];
+                            if (savedVal) {
+                                const radios = document.getElementsByName(`q${i}`);
+                                for (let radio of radios) {
+                                    if (radio.value === savedVal) {
+                                        radio.checked = true;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        const timestamp = localStorage.getItem("devTestTimestamp");
+                        if (timestamp) {
+                            const restoreMsg = document.createElement('div');
+                            restoreMsg.className = 'restore-note';
+                            restoreMsg.innerHTML = `📌 Восстановлены ранее сохранённые ответы от ${new Date(timestamp).toLocaleString('ru-RU')}`;
+                            const container = document.querySelector('.actions');
+                            if(container && !document.querySelector('.restore-note')) {
+                                container.before(restoreMsg);
+                                setTimeout(() => restoreMsg.remove(), 5000);
+                            }
+                        }
+                    } catch(e) {}
+                }
+            }
+            
+            // Сброс формы + очистка localStorage (по желанию, но при сбросе удалим только форму, сторадж чистить не будем для удобства)
+            function resetFormAndClear() {
+                if (confirm("Очистить все ответы? Данные в локальном хранилище также будут удалены (предыдущие ответы исчезнут).")) {
+                    form.reset();
+                    // очищаем ошибки
+                    for (let i = 1; i <= 5; i++) {
+                        const errorDiv = document.getElementById(`error${i}`);
+                        if (errorDiv) errorDiv.textContent = '';
+                    }
+                    localStorage.removeItem("devTestAnswers");
+                    localStorage.removeItem("devTestTimestamp");
+                    statusDiv.innerHTML = "🗑️ Все ответы сброшены, локальное хранилище очищено.";
+                    statusDiv.className = "status";
+                    setTimeout(() => {
+                        if(statusDiv.innerHTML.includes("сброшены")) statusDiv.innerHTML = "";
+                    }, 2500);
+                }
+            }
+            
+            // Привязываем события
+            submitBtn.addEventListener("click", handleSubmit);
+            resetBtn.addEventListener("click", resetFormAndClear);
+            
+            // Дополнительный "автосохранение" при изменении любого радио (человечный подход)
+            function autoSaveAnswers() {
+                const answers = getSelectedAnswers();
+                let hasAny = false;
+                for(let i=1;i<=5;i++) {
+                    if(answers[`q${i}`]) hasAny = true;
+                }
+                if(hasAny) {
+                    localStorage.setItem("devTestAnswers", JSON.stringify(answers));
+                    localStorage.setItem("devTestTimestamp", new Date().toISOString());
+                    // Можно показать ненавязчивый тост, но не будем перегружать, сделаем тихое сохранение
+                    const toast = document.createElement('div');
+                    toast.className = 'auto-save-toast';
+                    toast.textContent = '✍️ Черновик сохранён';
+                    document.body.appendChild(toast);
+                    setTimeout(() => toast.remove(), 1200);
+                }
+            }
+            
+            // Добавляем слушатели на все radio
+            for(let i=1;i<=5;i++) {
+                const radios = document.getElementsByName(`q${i}`);
+                for(let radio of radios) {
+                    radio.addEventListener("change", autoSaveAnswers);
+                }
+            }
+            
+            // При загрузке восстановим ранее сохраненные из localStorage
+            restoreFromStorage();
+            
+            // Тематический "живой" фидбек: если навели на карточку легкая тень — уже есть в css,
+            // добавим обработку недоступных кнопок как дружелюбие.
+            console.log("Анкета-тест для веб-разработчика готова. Стили вынесены в style.css.");
+        })();
+    </script>
+</body>
+</html>
